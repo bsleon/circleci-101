@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "af:87:7a:82:b9:43:36:e1:d1:7f:ab:7f:9a:c4:4e:80"
       - checkout
       - run: echo "A first hello"
       - run: mkdir -p my_workspace

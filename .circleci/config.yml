@@ -8,6 +8,7 @@ version: 2
        - checkout
        - run: echo "A first hello"
        - run: sleep 25
+   build:
    two:
      docker:
        - image: circleci/ruby:2.4.1

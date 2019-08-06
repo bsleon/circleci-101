@@ -1,6 +1,5 @@
-version: 2
+ version: 2
  jobs:
- build:
    one:
      docker:
        - image: circleci/ruby:2.4.1
@@ -8,7 +7,6 @@ version: 2
        - checkout
        - run: echo "A first hello"
        - run: sleep 25
-   build:
    two:
      docker:
        - image: circleci/ruby:2.4.1
